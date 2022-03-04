@@ -5,49 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller html</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <div id="header">
-        <div id="foto"></div>
-        <div id="nombre"></div>
-        <ul>
-            <li><a href="index.html">Informacion principal</a></li>
-            <li><a href="experiencia.html">Experiencia laboral</a> </li>
-            <li><a href="ref_personal.html">Referencias personales</a> </li>
-            <li><a href="ref_familiar.html">Referencias familiares</a> </li>
-            <li><a href="estudios.html">Estudios realizados</a> </li>
+        <ul class="indice">
+            <button onclick="window.location.href='index.html'">Informacion</button>
+            <button onclick="window.location.href='experiencia.html'">Experiencia laboral</button>
+            <button onclick="window.location.href='ref_personal.html'">Referencias personales</button>
+            <button onclick="window.location.href='ref_familiar.html'">Referencias familiares</button>
+            <button onclick="window.location.href='estudios.html'">Estudios</button>
         </ul>
     </div>
+    <article class="usuario">
+        <div id="foto">
+            <img src="img//foto.png" alt="" height="100%" width="100%">
+        </div>
+        <div id="nombre">
+            <h2>Daniel David Cardona Moreno</h2>
+            <h3>Desarrollador de software</h3>
+        </div>
+    </article>
+    <div class="main">
     <article>
-        <section>
-            <h2>Informacion: </h2>
-        </section>
-        <section id="info">
+        <div class="elementos">
             <section id="contacto">
-                <h2>Direccion</h2>
-                <p>cr112 #43-22</p>
+                <div class="dir">
+                    <h3>Direccion</h3>
+                    <p>cr112 #43-22</p>
+                </div>
+                <div class="dir">
+                    <h3>Telefono</h3>
+                    <p>2412381</p>
+                    <p>3024024595</p>
+                </div>
             </section>
-            <section id="contacto">
-                <h2>Telefono</h2>
-                <p>2412381</p>
-                <p>3024024595</p>
+            <section id="perfil">
+                <h3 class="titulo">Perfil</h3>
+                <p>Programador con experiencia 
+                    creando addons y  complementos en python, 
+                    conocimientos y desarrollos en nodejs, sql-mongodb, git. 
+                    <br>
+                    Poseo conocimientos en las buenas practicas de programación y código limpio. 
+                    <br>
+                    También tengo conocimientos en Wordpress-html-css-javascript-php. </p>
             </section>
-        </section>
-        <section id="perfil">
-            <h2>Perfil</h2>
-            <p>Programador con experiencia 
-                creando addons y  complementos en python, 
-                conocimientos y desarrollos en nodejs, sql-mongodb, git. 
-                <br>
-                Poseo conocimientos en las buenas practicas de programación y código limpio. 
-                <br>
-                También tengo conocimientos en Wordpress-html-css-javascript-php. </p>
-        </section>
+        </div>
     </article>
     <footer>
-        <h2>Descargar hoja de vida:</h2>
+        <h3>Descargar hoja de vida:</h3>
         <a href="resources//hoja de vida.pdf">Hoja de vida</a>
         
     </footer>
+</div>
+    
 </body>
 </html>
