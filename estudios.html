@@ -10,23 +10,33 @@
 <body>
     <div id="header">
         <ul class="indice">
-            <button onclick="window.location.href='index.html'">Informacion</button>
-            <button onclick="window.location.href='experiencia.html'">Experiencia laboral</button>
-            <button onclick="window.location.href='ref_personal.html'">Referencias personales</button>
-            <button onclick="window.location.href='ref_familiar.html'">Referencias familiares</button>
-            <button onclick="window.location.href='estudios.html'">Estudios</button>
+            <button class="btnindice" onclick="window.location.href='index.html'">Informacion</button>
+            <button class="btnindice" onclick="window.location.href='experiencia.html'">Experiencia laboral</button>
+            <button class="btnindice" onclick="window.location.href='ref_personal.html'">Referencias personales</button>
+            <button class="btnindice" onclick="window.location.href='ref_familiar.html'">Referencias familiares</button>
+            <button class="btnindice" onclick="window.location.href='estudios.html'">Estudios</button>
         </ul>
     </div>
-    <div class="main">
+    <div class="colores">
+        <button class="btnred" id="rojo">Rojo</button>
+        <button class="btnblue" id="azul">Azul</button>
+        <button class="btngreen" id="verde">Verde</button>
+    </div>
+    <div class="main" id="main">
         <article class="element">
                 <h2 class="titulo">Tecnico sistemas</h2>
+            <div class="acordeon activado">
                 <p>2016-2017 (sena)</p>
+            </div>
         </article>
         <article class="element">
-            <h2 class="titulo">Tecnologo multimedia</h2>
-            <p>2018-2020 (cesde)</p>
+                <h2 class="titulo">Tecnologo multimedia</h2>
+            <div class="acordeon activado">
+                    <p>2018-2020 (sena)</p>
+            </div>
         </article>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

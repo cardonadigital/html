@@ -10,43 +10,56 @@
 <body>
     <div id="header">
         <ul class="indice">
-            <button onclick="window.location.href='index.html'">Informacion</button>
-            <button onclick="window.location.href='experiencia.html'">Experiencia laboral</button>
-            <button onclick="window.location.href='ref_personal.html'">Referencias personales</button>
-            <button onclick="window.location.href='ref_familiar.html'">Referencias familiares</button>
-            <button onclick="window.location.href='estudios.html'">Estudios</button>
+            <button class="btnindice" onclick="window.location.href='index.html'">Informacion</button>
+            <button class="btnindice" onclick="window.location.href='experiencia.html'">Experiencia laboral</button>
+            <button class="btnindice" onclick="window.location.href='ref_personal.html'">Referencias personales</button>
+            <button class="btnindice" onclick="window.location.href='ref_familiar.html'">Referencias familiares</button>
+            <button class="btnindice" onclick="window.location.href='estudios.html'">Estudios</button>
         </ul>
     </div>
-    <div class="main">
+    <div class="colores">
+        <button class="btnred" id="rojo">Rojo</button>
+        <button class="btnblue" id="azul">Azul</button>
+        <button class="btngreen" id="verde">Verde</button>
+    </div>
+    <div class="main" id="main">
         <article>
             <section class="element">
                 <h3 class="titulo">Creador de contenido web</h3>
+            <div class="acordeon activado">
                 <p>He creado y desarrollado paginas web en wordpress y wix, 
                     tambien he creado contenido de edicion de videos, fotografia y vectores.
                 </p>
+            </div>
             </section>
         </article>
         <article>
             <section class="element">
                 <h3 class="titulo">Artista 3d</h3>
+            <div class="acordeon activado">
                 <p>He creado y desarrollado plugings y animaciones en blender, motion graphics y rotoscopia.</p>
+            </div>
             </section>
         </article>
         <article>
             <section class="element">
                 <h3 class="titulo">Web server</h3>
+            <div class="acordeon activado">
                 <p>He realizado proyectos en nodejs y mysql, tambien tengo experiencia validando y recopilando
                     informaicon en database, por ultimo tambien procesar los datos y sacara estadisticas.
                 </p>
+            </div>
             </section>
         </article>
         <article>
             <section class="element">
                 <h3 class="titulo">Creacion de aplicativos mobiles</h3>
+            <div class="acordeon activado">
                 <p>He desarrollado aplicativos para ios los cuales son para agendas y calcular informacion.</p>
+            </div>
             </section>
         </article>
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>

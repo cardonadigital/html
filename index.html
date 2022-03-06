@@ -10,12 +10,17 @@
 <body>
     <div id="header">
         <ul class="indice">
-            <button onclick="window.location.href='index.html'">Informacion</button>
-            <button onclick="window.location.href='experiencia.html'">Experiencia laboral</button>
-            <button onclick="window.location.href='ref_personal.html'">Referencias personales</button>
-            <button onclick="window.location.href='ref_familiar.html'">Referencias familiares</button>
-            <button onclick="window.location.href='estudios.html'">Estudios</button>
+            <button class="btnindice" onclick="window.location.href='index.html'">Informacion</button>
+            <button class="btnindice" onclick="window.location.href='experiencia.html'">Experiencia laboral</button>
+            <button class="btnindice" onclick="window.location.href='ref_personal.html'">Referencias personales</button>
+            <button class="btnindice" onclick="window.location.href='ref_familiar.html'">Referencias familiares</button>
+            <button class="btnindice" onclick="window.location.href='estudios.html'">Estudios</button>
         </ul>
+    </div>
+    <div class="colores">
+        <button class="btnred" id="rojo">Rojo</button>
+        <button class="btnblue" id="azul">Azul</button>
+        <button class="btngreen" id="verde">Verde</button>
     </div>
     <article class="usuario">
         <div id="foto">
@@ -26,7 +31,7 @@
             <h3>Desarrollador de software</h3>
         </div>
     </article>
-    <div class="main">
+    <div class="main" id="main">
     <article>
         <div class="elementos">
             <section id="contacto">
@@ -42,13 +47,15 @@
             </section>
             <section id="perfil">
                 <h3 class="titulo">Perfil</h3>
-                <p>Programador con experiencia 
-                    creando addons y  complementos en python, 
-                    conocimientos y desarrollos en nodejs, sql-mongodb, git. 
-                    <br>
-                    Poseo conocimientos en las buenas practicas de programación y código limpio. 
-                    <br>
-                    También tengo conocimientos en Wordpress-html-css-javascript-php. </p>
+                <div class="acordeon activado">
+                    <p>Programador con experiencia 
+                        creando addons y  complementos en python, 
+                        conocimientos y desarrollos en nodejs, sql-mongodb, git. 
+                        <br>
+                        Poseo conocimientos en las buenas practicas de programación y código limpio. 
+                        <br>
+                        También tengo conocimientos en Wordpress-html-css-javascript-php. </p>
+                </div>
             </section>
         </div>
     </article>
@@ -58,6 +65,6 @@
         
     </footer>
 </div>
-    
+<script src="main.js"></script>
 </body>
 </html>

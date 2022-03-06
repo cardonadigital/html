@@ -4,7 +4,6 @@ body{
 
 
 button{
-    width: 20%;
     margin: 0 auto;
 
 }
@@ -19,11 +18,9 @@ a{
     padding-top: 2.2%;
 }
 
-p{
-    padding-left: 8%;
-    padding-right: 8%;
+h2{
+    margin: 0 auto;
 }
-
 
 #foto{
     width: 100%;
@@ -99,6 +96,7 @@ p{
 }
 
 .element{
+    display: block;
     justify-content: center;
     text-align: center;
 }
@@ -108,5 +106,70 @@ p{
     background-color: rgb(202, 202, 202);
 }
 
+.titulo:hover{
+    background-color: aqua;
+}
 
+.boton {
+    background-color: aqua;
+}
 
+.colores{
+    display: flex;
+    justify-content: center;
+}
+
+.btnindice{
+    width: 20%;
+    background-color: rgba(77, 77, 77, 0.425);
+    border: hidden;
+    height: 30px;
+
+}
+
+.btnindice:hover{
+    background-color: rgba(81, 109, 114, 0.425);
+}
+
+.btnred{
+    width: 33.3%;
+    border: none;
+}
+
+.btnblue{
+    width: 33.3%;
+    border: none;
+}
+
+.btngreen{
+    width: 33.3%;
+    border: none;
+}
+
+.btnred:hover{
+    background-color: rgb(255, 8, 0);
+}
+.btnblue:hover{
+    background-color: rgb(0, 153, 255);
+}
+.btngreen:hover{
+    background-color: rgb(43, 255, 0);
+}
+
+.l{
+    background-color: rgb(175, 78, 71);
+}
+
+.acordeon{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.desactivado {
+    display: none;
+}
+
+.activado{
+    display: initial;
+}
